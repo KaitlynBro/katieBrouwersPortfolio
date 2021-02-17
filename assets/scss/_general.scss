@@ -1,1 +1,182 @@
 // General Style
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;700;800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+
+// general styles
+h1 {
+    font-size: 60px;
+    line-height: 120%;
+    font-weight: 800;
+}
+
+h2, .header-two {
+    font-size: 25px;
+    line-height: 120%;
+    font-weight: 700;
+    color: $orange;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 20px;
+    // &:first-of-type {
+    //     margin-right: 100px;
+    // }
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+span.see {
+    font-size: 14px;
+    text-decoration: none;
+    &:hover {text-decoration: none !important;}
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 120%;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 700;
+}
+
+p {
+    font-size:18px;
+    line-height: 180%;
+    font-weight: 400;
+}
+
+.btn-link:hover {
+    color: $orange;
+}
+
+body {
+    font-family: 'Spectral', serif;
+    background-color: $antiquewhite;
+    color: $orange;
+}
+
+.main-container {
+    max-width: 1300px;
+}
+
+// general styles
+
+.header {
+    min-height: 50vh;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+// navbar
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    li.nav-item {
+        .center {
+            margin: 0 50px;
+            font-size: 28px;
+            font-weight: 800;
+        }
+        a {
+            font-weight: 400;
+            font-size: 24px;
+            color: $orange;
+        }
+    }
+}
+
+// navbar
+
+// main
+
+.nav-tabs {
+    border-bottom: unset;
+    li:first-of-type {
+        margin-right: 50px;
+    }
+    svg.bi-chevron-down {
+        width:20px;
+        height: 20px;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+.projects {
+    .project {
+        margin: 10px;
+        padding: 0;
+        width: 100%;
+        transition: 1s;
+        &:after {
+            content: "";
+            visibility: hidden;
+            background-color: $sage;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 10px;
+            box-sizing: content-box;
+            right: -10px;
+            z-index: -1;
+        }
+        &:hover:after {
+            visibility: unset;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+// main
+
+// footer
+.footer {
+    margin: 80px 0 30px;
+    p {
+        margin: 10px 0;
+    }
+    a {
+        color: $orange;
+    }
+    .social {
+        margin: 30px 0;
+        svg.bi {
+            width: 35px;
+            height: 35px;
+            transition: 0.5s;
+            &:hover {
+                color: $sage;
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
+    a.to-top {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        svg.top {
+            width: 35px;
+            height: 35px;
+        }
+    }
+}
+// footer
+
